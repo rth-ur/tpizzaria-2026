@@ -196,8 +196,7 @@
       }
     ]
   },
-  "menu": {
-    "pizzas": [
+  "pizzas": [
       {
         "id": 1,
         "nome": "Margherita",
@@ -255,5 +254,4 @@
         "eh_novidade": true
       }
     ]
-  }
 }

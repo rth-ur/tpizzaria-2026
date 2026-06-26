@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Menu</h1>
+    <p v-if="carregando">Carregando catálogo...</p>
+    <p v-if="erro" style="color: red;">{{ erro }}</p>
     <div id="scroll-horizontal">
       <div
         id="card-content"
@@ -28,14 +30,24 @@ export default {
   data() {
     return {
       listaMenuPizzas: [],
+      carregando: false,
+      erro: null,
     };
   },
   methods: {
     async consultarMenu() {
-      const response = await fetch(`${this.$apiUrl}/menu`);
-      const dados = await response.json();
-      this.listaMenuPizzas = dados.pizzas;
-      console.log(this.listaMenuPizzas);
+      this.carregando = true;
+      this.erro = null;
+      try {
+        const response = await fetch(`${this.$apiUrl}/pizzas`);
+        if (!response.ok) throw new Error(`Erro HTTP ${response.status}`);
+        this.listaMenuPizzas = await response.json();
+      } catch (error) {
+        console.error('Erro ao carregar menu:', error);
+        this.erro = `Não foi possível carregar o catálogo. (${error.message})`;
+      } finally {
+        this.carregando = false;
+      }
     },
     selecionarPizza(pizzaSelecionada) {
       const param = JSON.stringify(pizzaSelecionada);
