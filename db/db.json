@@ -1,0 +1,259 @@
+{
+  "tipos_massa": [
+    {
+      "id": 1,
+      "descricao": "Massa Fina"
+    },
+    {
+      "id": 2,
+      "descricao": "Massa Grossa"
+    },
+    {
+      "id": 3,
+      "descricao": "Massa de Fermentação Natural"
+    },
+    {
+      "id": 4,
+      "descricao": "Borda Recheada"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [
+    {
+      "nome": "Heil Hitler",
+      "massa": {
+        "id": 3,
+        "descricao": "Massa de Fermentação Natural"
+      },
+      "bebidas": [
+        {
+          "id": 3,
+          "nome": "Guaraná Antarctica 310 ml",
+          "descricao": "",
+          "valor": 6,
+          "eh_novidade": false
+        },
+        {
+          "id": 4,
+          "nome": "Água Mineral 500 ml",
+          "descricao": "",
+          "valor": 4,
+          "eh_novidade": false
+        },
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 1,
+          "nome": "Borda Recheada de Catupiry",
+          "descricao": "Borda generosa recheada com catupiry cremoso",
+          "valor": 8,
+          "eh_novidade": false
+        },
+        {
+          "id": 2,
+          "nome": "Adicional de Queijo",
+          "descricao": "Queijo mussarela extra por cima da pizza",
+          "valor": 5,
+          "eh_novidade": false
+        },
+        {
+          "id": 3,
+          "nome": "Fatia Extra",
+          "descricao": "Uma fatia a mais da pizza escolhida",
+          "valor": 12,
+          "eh_novidade": false
+        },
+        {
+          "id": 4,
+          "nome": "Azeitonas",
+          "descricao": "Azeitonas pretas fatiadas sobre a pizza",
+          "valor": 4,
+          "eh_novidade": false
+        }
+      ],
+      "pizza": {
+        "id": 7,
+        "nome": "Vegetariana",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Vegetariana",
+        "descricao": "Abobrinha, berinjela, pimentão, tomate cereja e cogumelos paris sobre molho de tomate e mussarela. Leve, colorida e cheia de sabor.",
+        "valor": 33,
+        "eh_novidade": true
+      },
+      "statusId": 5,
+      "id": 1
+    },
+    {
+      "nome": "Heil Hitler",
+      "massa": {
+        "id": 1,
+        "descricao": "Massa Fina"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "pizza": {
+        "id": 1,
+        "nome": "Margherita",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Margherita",
+        "descricao": "Clássica pizza com molho de tomate artesanal, mussarela fresca derretida no forno a lenha e folhas de manjericão colhidas na hora. Uma explosão de sabor italiano.",
+        "valor": 35,
+        "eh_novidade": false
+      },
+      "statusId": 5,
+      "id": 2
+    }
+  ],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Borda Recheada de Catupiry",
+        "descricao": "Borda generosa recheada com catupiry cremoso",
+        "valor": 8,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Adicional de Queijo",
+        "descricao": "Queijo mussarela extra por cima da pizza",
+        "valor": 5,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Fatia Extra",
+        "descricao": "Uma fatia a mais da pizza escolhida",
+        "valor": 12,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Azeitonas",
+        "descricao": "Azeitonas pretas fatiadas sobre a pizza",
+        "valor": 4,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Fanta Laranja Lata 310 ml",
+        "descricao": "",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Guaraná Antarctica 310 ml",
+        "descricao": "",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Água Mineral 500 ml",
+        "descricao": "",
+        "valor": 4,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "pizzas": [
+      {
+        "id": 1,
+        "nome": "Margherita",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Margherita",
+        "descricao": "Clássica pizza com molho de tomate artesanal, mussarela fresca derretida no forno a lenha e folhas de manjericão colhidas na hora. Uma explosão de sabor italiano.",
+        "valor": 35,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Pepperoni",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Pepperoni",
+        "descricao": "Irresistível combinação de molho de tomate encorpado, mussarela generosa e fatias de pepperoni temperado. Bordas douradas e crocantes saídas do nosso forno a lenha.",
+        "valor": 38,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Quatro Queijos",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Quatro+Queijos",
+        "descricao": "Uma harmonia perfeita de mussarela, provolone, gorgonzola e parmesão derretidos no ponto certo. Para os verdadeiros amantes de queijo.",
+        "valor": 40,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Portuguesa",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Portuguesa",
+        "descricao": "Pizza recheada com presunto, ovos, cebola, azeitona preta, pimentão verde e mussarela. Um clássico brasileiro que nunca decepciona.",
+        "valor": 32,
+        "eh_novidade": false
+      },
+      {
+        "id": 5,
+        "nome": "Frango com Catupiry",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Frango+Catupiry",
+        "descricao": "Frango desfiado temperado com ervas finas coberto por uma camada generosa de catupiry cremoso e mussarela. Favorita da casa!",
+        "valor": 35,
+        "eh_novidade": false
+      },
+      {
+        "id": 6,
+        "nome": "Calabresa",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Calabresa",
+        "descricao": "Rodelas de calabresa artesanal sobre molho de tomate especial, cebola roxa e mussarela derretida. Sabor defumado que conquista desde a primeira mordida.",
+        "valor": 30,
+        "eh_novidade": false
+      },
+      {
+        "id": 7,
+        "nome": "Vegetariana",
+        "foto": "https://placehold.co/300x200/c0392b/white?text=Vegetariana",
+        "descricao": "Abobrinha, berinjela, pimentão, tomate cereja e cogumelos paris sobre molho de tomate e mussarela. Leve, colorida e cheia de sabor.",
+        "valor": 33,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
