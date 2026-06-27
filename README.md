@@ -1,3 +1,5 @@
+https://tpizzaria-2026.vercel.app/
+
 # 🍕 TPizzaria - Aplicação de Pedidos de Pizza
 
 ## 📋 Sobre o Projeto
