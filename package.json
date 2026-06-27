@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "vercel-build": "vue-cli-service build",
+    "start": "node server.js",
     "bancojson": "json-server --watch db/db.json"
   },
   "dependencies": {
