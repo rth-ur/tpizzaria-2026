@@ -4,10 +4,15 @@ const router = jsonServer.router('db/db.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
-// Usar middlewares padrão
-server.use(middlewares);
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  if (req.method === 'OPTIONS') return res.sendStatus(200);
+  next();
+});
 
-// Usar roteador padrão
+server.use(middlewares);
 server.use(router);
 
 // Iniciar servidor
